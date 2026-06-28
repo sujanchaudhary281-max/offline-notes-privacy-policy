@@ -1,4 +1,4 @@
-# Privacy Policy – Offline Notes: No Cloud
+# Privacy Policy – Offline Notes - No Cloud
 
 **Last Updated:** June 28, 2026
 
@@ -8,7 +8,7 @@ Welcome to **Offline Notes: No Cloud**. Your privacy is important to us. This Pr
 
 * **App Name:** Offline Notes: No Cloud
 * **Package Name:** `com.sujan.offlinenotes`
-* **Developer:** Sujan
+* **Developer:** Sujan Chaudhary
 
 ---
 
@@ -44,7 +44,6 @@ All app data, including:
 
 * Notes
 * Folders
-* Tags
 * App settings
 
 is stored locally on your device using a SQLite database.
@@ -55,9 +54,16 @@ Your data never leaves your device unless **you choose** to export or share it.
 
 # Biometric Authentication
 
-Offline Notes supports biometric authentication (Fingerprint or Face Unlock) for protecting your notes.
+Offline Notes supports optional biometric authentication (such as Fingerprint) on compatible devices to help protect your notes. If biometric authentication is not available or not enabled on your device, you can continue using the app without it.
 
 Biometric verification is handled entirely by your device's operating system.
+
+The app:
+
+* Does **not** access your biometric information.
+* Does **not** store biometric data.
+* Does **not** transmit biometric data.
+
 
 The app:
 
@@ -68,8 +74,6 @@ The app:
 ---
 
 # Secure Vault & Encryption
-
-Private notes stored inside the Vault are protected using AES encryption.
 
 Encrypted backup files are also saved only on your device.
 
@@ -143,9 +147,9 @@ Any updates will be published on this page with a revised "Last Updated" date.
 
 If you have any questions regarding this Privacy Policy, please contact:
 
-**Developer:** Sujan
+**Developer:** Sujan Chaudhary
 
-**Email:** [sujan@offlinenotes.app](mailto:sujan@offlinenotes.app)
+**Email:** [sujanchaudhary281@gmail.com]
 
 ---
 
