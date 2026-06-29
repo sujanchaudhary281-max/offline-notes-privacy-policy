@@ -1,9 +1,11 @@
 # Privacy Policy
 
-**App Name:** Offline Notes: No Cloud
-**Package:** `com.sujan.offlinenotes`
-**Developer:** Sujan Chaudhary
-**Last updated:** June 29, 2026
+|                  |                          |
+| ---------------- | ------------------------ |
+| **App Name**     | Offline Notes: No Cloud  |
+| **Package**      | `com.sujan.offlinenotes` |
+| **Developer**    | Sujan Chaudhary          |
+| **Last updated** | June 29, 2026            |
 
 ---
 
