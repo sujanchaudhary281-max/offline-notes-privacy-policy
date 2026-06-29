@@ -3,7 +3,7 @@
 **App Name:** Offline Notes: No Cloud
 **Package:** `com.sujan.offlinenotes`
 **Developer:** Sujan Chaudhary
-**Last updated:** June 28, 2026
+**Last updated:** June 29, 2026
 
 ---
 
@@ -74,11 +74,11 @@ The app:
 
 ## 6. Backup & Export
 
-The app can create encrypted backup files (`.vaultnote.enc`) that are saved to your device's local storage.
+The app can create encrypted backup files (`.vaultnote.enc`) saved to your device's local storage.
 
-These backup files are encrypted using **AES** before being saved.
+These files are encrypted using **AES** before being saved.
 
-You may manually share or export these files using your device's share sheet. We never receive copies of your backups.
+You can manually share or export these files using your device's share sheet. We do not receive copies of your backups.
 
 Notes can also be exported as:
 
@@ -86,6 +86,27 @@ Notes can also be exported as:
 * PDF (`.pdf`)
 
 These exports are created only when you request them.
+
+---
+
+## 7. Pro Upgrade & In-App Purchases
+
+The app offers an optional one-time **Pro Upgrade** that unlocks additional features, including:
+
+* Unlimited notes
+* Unlimited folders
+* Note history
+* Backup
+* Export
+* And more
+
+Purchases are processed securely through **Google Play (Android)** or the **App Store (iOS)** using the `react-native-iap` library.
+
+When you make a purchase or restore a previous purchase, your device communicates directly with Google Play or the App Store.
+
+We do **not** receive, handle, or store any payment or billing information.
+
+Your Pro status is stored locally on your device only.
 
 ---
 
@@ -101,9 +122,9 @@ Requested only when you choose to enable biometric unlock.
 
 ### In-App Purchases (BILLING)
 
-Used to process the optional one-time Pro upgrade through Google Play.
+Used to process the optional one-time Pro Upgrade through Google Play.
 
-All payments are handled by Google Play. We never receive or store your payment information.
+All transactions are handled by Google Play. We do not receive or store payment information.
 
 ### The app does **not** request access to:
 
@@ -117,20 +138,7 @@ All payments are handled by Google Play. We never receive or store your payment 
 
 ---
 
-## 9. In-App Purchases
-
-The app offers an optional one-time **Pro Upgrade** that unlocks additional features.
-
-Purchases are processed securely through:
-
-* Google Play (Android)
-* App Store (iOS)
-
-We never handle or store payment or billing information.
-
----
-
-## 10. Note History
+## 9. Note History
 
 The app maintains a local history of previous versions of your notes.
 
@@ -142,7 +150,7 @@ This history:
 
 ---
 
-## 11. Trash
+## 10. Trash
 
 Deleted notes are moved to a local Trash folder on your device.
 
@@ -152,15 +160,15 @@ You may restore or permanently delete notes at any time.
 
 ---
 
-## 12. Children's Privacy
+## 11. Children's Privacy
 
 This app does not knowingly collect data from anyone, including children under the age of 13.
 
-The app is a general-purpose productivity tool and is not specifically directed toward children.
+The app is a general-purpose productivity tool and is not directed toward children.
 
 ---
 
-## 13. Third-Party Services
+## 12. Third-Party Services
 
 Offline Notes: No Cloud does **not** use:
 
@@ -171,22 +179,20 @@ Offline Notes: No Cloud does **not** use:
 
 ---
 
-## 14. Security
+## 13. Security
 
 We take security seriously.
 
 Security measures include:
 
-* AES encryption for notes stored in the vault
-* SHA-256 hashing for PINs
-* Encrypted backup files
-* All security operations performed locally on your device
-
-No security-related information is transmitted to our servers because we do not operate any servers.
+* Your notes are stored in a local SQLite database on your device.
+* Backup files are AES-encrypted before being written to disk.
+* PINs are hashed using SHA-256 and are never stored in plain text.
+* All security operations happen locally on your device.
 
 ---
 
-## 15. Changes to This Policy
+## 14. Changes to This Policy
 
 If this Privacy Policy is updated, the latest version will be published at this URL.
 
@@ -194,11 +200,11 @@ Your continued use of the app after changes means you accept the updated Privacy
 
 ---
 
-## 16. Contact
+## 15. Contact
 
 If you have any questions about this Privacy Policy, please contact us.
 
-**Email:** [sujanchaudhary281@gmail.com](mailto:sujanchaudhary281@gmail.com)
+**Email:** [sujanchaudhary281@gmail.com](mailto:sujanchaudhary281@gmail.com)
 
 ---
 
