@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Offline Notes: No Cloud</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 18px; margin-top: 32px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    p, li { font-size: 15px; }
+    footer { margin-top: 48px; font-size: 13px; color: #888; border-top: 1px solid #eee; padding-top: 16px; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy</h1>
+  <p><strong>App Name:</strong> Offline Notes: No Cloud<br />
+  <strong>Package:</strong> com.sujan.offlinenotes<br />
+  <strong>Developer:</strong> Sujan<br />
+  <strong>Last updated:</strong> June 29, 2026</p>
+
+  <h2>1. Overview</h2>
+  <p>Offline Notes: No Cloud is a private, fully offline note-taking application. Your notes never leave your device. We do not operate any servers, we do not collect any data, and we do not track you in any way.</p>
+
+  <h2>2. Data We Collect</h2>
+  <p><strong>We collect no personal data whatsoever.</strong> The app contains no analytics, no advertising SDKs, no crash reporting services, and no third-party tracking. No information is ever transmitted to us or anyone else.</p>
+
+  <h2>3. Data Stored on Your Device</h2>
+  <p>The app stores the following data <strong>locally on your device only</strong>:</p>
+  <ul>
+    <li>Your notes, titles, and note content</li>
+    <li>Folders and tags you create</li>
+    <li>App settings and preferences (theme, font, auto-lock settings)</li>
+    <li>A hashed version of your PIN (the actual PIN is never stored in plain text)</li>
+    <li>An encrypted backup key used to encrypt backup files</li>
+  </ul>
+  <p>All of this data is stored in a local SQLite database on your device and is never synced to any cloud service.</p>
+
+  <h2>4. PIN & Lock Screen</h2>
+  <p>The app allows you to protect your notes with a numeric PIN. Your PIN is stored as a one-way cryptographic hash (SHA-256) — it cannot be reversed or read. After 5 incorrect PIN attempts, the app enforces a timed lockout to protect against brute-force attacks.</p>
+  <p>The app also supports a <strong>Decoy PIN</strong> feature: a separate PIN that shows an empty or decoy vault, protecting your real notes if you are ever forced to unlock the app under duress.</p>
+
+  <h2>5. Biometric Authentication</h2>
+  <p>The app supports biometric authentication including fingerprint and face recognition (Face ID on iOS, device biometrics on Android). Biometric processing is performed entirely by your device's operating system. We never access, read, store, or transmit your biometric data.</p>
+
+  <h2>6. Backup & Export</h2>
+  <p>The app can create encrypted backup files (`.vaultnote.enc`) saved to your device's local storage. These files are encrypted with AES before saving. You can share or export these files using your device's share sheet — this is a manual action entirely under your control. We do not receive copies of your backups.</p>
+  <p>Notes can also be exported as plain text (.txt) or PDF files, again only via your device's share sheet at your request.</p>
+
+  <h2>7. Pro Upgrade &amp; In-App Purchases</h2>
+  <p>The app offers an optional one-time <strong>Pro upgrade</strong> that unlocks additional features (unlimited notes, folders, note history, backup, export, and more). Purchases are processed securely by <strong>Google Play</strong> (Android) or the <strong>App Store</strong> (iOS) using the <code>react-native-iap</code> library. When you make a purchase or restore a previous purchase, your device communicates directly with Google Play or the App Store — we do not receive, handle, or store any payment or billing information. Your Pro status is recorded locally on your device only.</p>
+
+  <h2>8. Permissions</h2>
+  <ul>
+    <li><strong>Biometrics (USE_BIOMETRIC / Face ID):</strong> Used to authenticate and unlock the app and vault. Only requested when you attempt to use biometric unlock.</li>
+    <li><strong>In-App Purchases (BILLING):</strong> Used to process the optional one-time Pro upgrade via Google Play. All transactions are handled by Google Play — we do not receive or store payment information.</li>
+  </ul>
+  <p>The app does not request permissions for camera, microphone, location, contacts, phone, SMS, or any other sensitive capability.</p>
+
+  <h2>9. Note History</h2>
+  <p>The app maintains a local history of previous versions of your notes so you can restore earlier content. This history is stored only on your device and is deleted when you permanently delete a note.</p>
+
+  <h2>10. Trash</h2>
+  <p>Deleted notes are moved to a trash folder on your device. Trash is not synced anywhere. You can restore or permanently delete trashed notes at any time.</p>
+
+  <h2>11. Children's Privacy</h2>
+  <p>This app does not knowingly collect data from anyone, including children under 13. The app is a general-purpose productivity tool and is not directed at children.</p>
+
+  <h2>12. Third-Party Services</h2>
+  <p>The app does not use any third-party analytics, advertising, or data collection services.</p>
+
+  <h2>13. Security</h2>
+  <p>We take security seriously. Your notes are stored in a local SQLite database on your device. Backup files are AES-encrypted before being written to disk. PINs are hashed with SHA-256 and never stored in plain text. All security operations happen locally on your device.</p>
+
+  <h2>14. Changes to This Policy</h2>
+  <p>If we update this privacy policy, the updated version will be posted at this URL. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>15. Contact</h2>
+  <p>If you have questions about this privacy policy, contact us at:<br />
+  <strong>Email:</strong> your@email.com</p>
+
+  <footer>
+    &copy; 2026 Offline Notes: No Cloud. All rights reserved.
+  </footer>
+
+</body>
+</html>
