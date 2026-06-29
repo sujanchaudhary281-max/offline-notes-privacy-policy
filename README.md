@@ -1,69 +1,68 @@
-# Privacy Policy – Offline Notes - No Cloud
+# Privacy Policy
 
-**Last Updated:** June 28, 2026
-
-Welcome to **Offline Notes: No Cloud**. Your privacy is important to us. This Privacy Policy explains how the app handles your information and data.
-
-## App Information
-
-* **App Name:** Offline Notes: No Cloud
-* **Package Name:** `com.sujan.offlinenotes`
-* **Developer:** Sujan Chaudhary
+**App Name:** Offline Notes: No Cloud
+**Package:** `com.sujan.offlinenotes`
+**Developer:** Sujan Chaudhary
+**Last updated:** June 28, 2026
 
 ---
 
-# Overview
+## 1. Overview
 
-Offline Notes: No Cloud is a fully offline note-taking application designed to help you create, organize, and manage notes without requiring an internet connection.
-
-Your notes remain on your device. We do not collect, store, or share your personal information.
+Offline Notes: No Cloud is a private, fully offline note-taking application. Your notes never leave your device. We do not operate any servers, we do not collect any data, and we do not track you in any way.
 
 ---
 
-# Information We Collect
+## 2. Data We Collect
 
-**We do not collect any personal information.**
+**We collect no personal data whatsoever.**
 
-The app does **not**:
+The app contains:
 
-* Collect personal data
-* Track your activity
-* Use analytics
-* Display advertisements
-* Use advertising SDKs
-* Send data to external servers
-* Collect crash reports
+* No analytics
+* No advertising SDKs
+* No crash reporting services
+* No third-party tracking
 
-Everything you create stays on your device.
+No information is ever transmitted to us or anyone else.
 
 ---
 
-# Local Data Storage
+## 3. Data Stored on Your Device
 
-All app data, including:
+The app stores the following data **locally on your device only**:
 
-* Notes
-* Folders
-* App settings
+* Your notes, titles, and note content
+* Folders and tags you create
+* App settings and preferences (theme, font, auto-lock settings)
+* A hashed version of your PIN (the actual PIN is never stored in plain text)
+* An encrypted backup key used to encrypt backup files
 
-is stored locally on your device using a SQLite database.
-
-Your data never leaves your device unless **you choose** to export or share it.
+All of this data is stored in a local SQLite database on your device and is never synced to any cloud service.
 
 ---
 
-# Biometric Authentication
+## 4. PIN & Lock Screen
 
-Offline Notes supports optional biometric authentication (such as Fingerprint) on compatible devices to help protect your notes. If biometric authentication is not available or not enabled on your device, you can continue using the app without it.
+The app allows you to protect your notes with a numeric PIN.
 
-Biometric verification is handled entirely by your device's operating system.
+Your PIN is stored as a **one-way cryptographic hash (SHA-256)**, meaning it cannot be reversed or read.
 
-The app:
+After **5 incorrect PIN attempts**, the app enforces a timed lockout to help protect against brute-force attacks.
 
-* Does **not** access your biometric information.
-* Does **not** store biometric data.
-* Does **not** transmit biometric data.
+The app also supports a **Decoy PIN** feature. This separate PIN opens an empty or decoy vault, helping protect your real notes if you are ever forced to unlock the app.
 
+---
+
+## 5. Biometric Authentication
+
+The app supports biometric authentication, including:
+
+* Fingerprint
+* Face Recognition (Face ID on iOS)
+* Device biometrics on Android
+
+Biometric verification is performed entirely by your device's operating system.
 
 The app:
 
@@ -73,84 +72,134 @@ The app:
 
 ---
 
-# Secure Vault & Encryption
+## 6. Backup & Export
 
-Encrypted backup files are also saved only on your device.
+The app can create encrypted backup files (`.vaultnote.enc`) that are saved to your device's local storage.
 
-Encryption keys are generated and stored locally. They are never uploaded or shared.
+These backup files are encrypted using **AES** before being saved.
+
+You may manually share or export these files using your device's share sheet. We never receive copies of your backups.
+
+Notes can also be exported as:
+
+* Plain text (`.txt`)
+* PDF (`.pdf`)
+
+These exports are created only when you request them.
 
 ---
 
-# Permissions
+## 8. Permissions
 
-Offline Notes requests only the permissions required for its features.
+The app only requests the following permissions:
 
-### Biometric Authentication
+### Biometrics (USE_BIOMETRIC / Face ID)
 
-Used to unlock the app and access protected notes.
+Used to authenticate and unlock the app and vault.
 
-### Google Play Billing
+Requested only when you choose to enable biometric unlock.
 
-Used only for optional one-time Pro purchases through Google Play.
+### In-App Purchases (BILLING)
 
-Payment information is processed securely by Google Play. The app never receives or stores your payment details.
+Used to process the optional one-time Pro upgrade through Google Play.
 
-The app does **not** request permissions for:
+All payments are handled by Google Play. We never receive or store your payment information.
+
+### The app does **not** request access to:
 
 * Camera
 * Microphone
-* Contacts
 * Location
+* Contacts
+* Phone
 * SMS
-* Phone calls
+* Any other sensitive permissions
 
 ---
 
-# In-App Purchases
+## 9. In-App Purchases
 
-Offline Notes offers an optional one-time Pro upgrade through Google Play Billing.
+The app offers an optional one-time **Pro Upgrade** that unlocks additional features.
 
-All transactions are securely processed by Google Play.
+Purchases are processed securely through:
 
-We never receive or store your payment information.
+* Google Play (Android)
+* App Store (iOS)
 
----
-
-# Children's Privacy
-
-Offline Notes is a general productivity application.
-
-We do not knowingly collect personal information from children under the age of 13.
+We never handle or store payment or billing information.
 
 ---
 
-# Third-Party Services
+## 10. Note History
 
-Offline Notes does **not** integrate:
+The app maintains a local history of previous versions of your notes.
+
+This history:
+
+* Is stored only on your device
+* Allows restoring previous versions
+* Is permanently deleted when the note is permanently deleted
+
+---
+
+## 11. Trash
+
+Deleted notes are moved to a local Trash folder on your device.
+
+Trash is never synced anywhere.
+
+You may restore or permanently delete notes at any time.
+
+---
+
+## 12. Children's Privacy
+
+This app does not knowingly collect data from anyone, including children under the age of 13.
+
+The app is a general-purpose productivity tool and is not specifically directed toward children.
+
+---
+
+## 13. Third-Party Services
+
+Offline Notes: No Cloud does **not** use:
 
 * Analytics services
 * Advertising services
-* Tracking services
-* External cloud services
+* Third-party tracking
+* Data collection services
 
 ---
 
-# Changes to This Privacy Policy
+## 14. Security
 
-We may update this Privacy Policy from time to time.
+We take security seriously.
 
-Any updates will be published on this page with a revised "Last Updated" date.
+Security measures include:
 
----
+* AES encryption for notes stored in the vault
+* SHA-256 hashing for PINs
+* Encrypted backup files
+* All security operations performed locally on your device
 
-# Contact
-
-If you have any questions regarding this Privacy Policy, please contact:
-
-**Developer:** Sujan Chaudhary
-
-**Email:** [sujanchaudhary281@gmail.com]
+No security-related information is transmitted to our servers because we do not operate any servers.
 
 ---
 
-© 2026 Offline Notes: No Cloud. All Rights Reserved.
+## 15. Changes to This Policy
+
+If this Privacy Policy is updated, the latest version will be published at this URL.
+
+Your continued use of the app after changes means you accept the updated Privacy Policy.
+
+---
+
+## 16. Contact
+
+If you have any questions about this Privacy Policy, please contact us.
+
+**Email:** [sujanchaudhary281@gmail.com](mailto:sujanchaudhary281@gmail.com)
+
+---
+
+© 2026 Offline Notes: No Cloud. All rights reserved.
